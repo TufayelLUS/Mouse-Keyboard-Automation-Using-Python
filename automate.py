@@ -5,7 +5,7 @@ from time import sleep
 actions_list = []
 
 if __name__ == "__main__":
-    print("Listening started\nPress c to register a click\nPress i to record mouse position\nPrses t to record typing")
+    print("Listening started\nPress c to register a click\nPress i to record mouse position\nPress t to record typing")
     while True:
         if keyboard.is_pressed("c"):
             print("Recorded a click")
