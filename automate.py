@@ -2,16 +2,10 @@ import pyautogui
 import keyboard
 from time import sleep
 
-
 actions_list = []
 
-
-def startRecording():
-    pass
-
-
 if __name__ == "__main__":
-    print("Listening started\nPress c to register a click\nPress i to record mouse position")
+    print("Listening started\nPress c to register a click\nPress i to record mouse position\nPrses t to record typing")
     while True:
         if keyboard.is_pressed("c"):
             print("Recorded a click")
@@ -29,7 +23,7 @@ if __name__ == "__main__":
         if keyboard.is_pressed('esc'):
             print("Exiting recording session")
             break
-    input("Press enter to start actions after 5 seconds")
+    input("Press Enter to start actions after 5 seconds ...")
     sleep(5)
     for action in actions_list:
         if type(action) == tuple:
